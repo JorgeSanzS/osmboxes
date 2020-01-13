@@ -1,11 +1,11 @@
 # osmboxes
-A tool to split a .osm file into multiple files, designed to be used with OSM Tasking Manager 2
+A tool to split a .osm file into multiple files, designed to be used with OSM Tasking Manager 2.13.2-98-gb2c8f60
 
 It uses osmconvert to get the job done.
 
 Usage:
 
-./osmboxes.sh file.osm osmtm_tasks_XX.json
+sh osmboxes.sh file.osm osmtm_tasks_XX.json
 
 osmtm_tasks_XX.json can be retreived using a URL like this:
 
@@ -15,4 +15,4 @@ Where XX is the project number.
 
 After obtaining the files, you should add a link in the per task instructions like this:
 
-[Download and open with JOSM the data for this area](http://127.0.0.1:8111/import?url=http://your-server.com/osmdata-{x}-{y}.osm)
+[Download and open with JOSM the data for this area](http://127.0.0.1:8111/import?url=http://your-server.com/file-{x}-{y}.osm)
